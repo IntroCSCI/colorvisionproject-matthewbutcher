@@ -1,20 +1,20 @@
 # !!!Color finder !!!
-color finder finds the hex values in a the code checks if the code length is 6 or 3. from there the code will take the hex values and turn it into an intiger with that the code will then check if it falls in the correct values and if so will check if the previous pixel is to close to the current pixel in color and may pose a problem.
+color finder finds the hex values in a the code checks if the code length is 6. from there the code will take the hex values and turn it into an intiger with that the code will then check if it falls in the correct values and if so will check if the previous pixel is to close to the current pixel in color and may pose a problem.
 
 ## Description
 
-!!!currently my program will go though each pixel and display the rgb value as a single unit then display red green and blue seperatly so its easier for people who dont understand programing to understand it better.!!!
+!!!currently my program will go though each pixel fidn the hex value convert them to an int value and display the rgb value as a single unit then display red green and blue seperatly so its easier for people who dont understand programing to understand it better. if there is a issue the program will show which color are the problems and by how much!!!
 
 ### v0.2 Updates
 
 Updates
 addition of an improved file reader
-file now looks for the # before the hexvalues of color and then checks if the following string is 3 or 6 characters long
+file now looks for the # before the hexvalues of color and then checks if the following string is 6 characters long
 created structures that are called pixels, this contains a
 
 ### v1.0 Updates
 
-*Coming soon*
+in this update we are adding a class to the program. this lets every pixel save values and do the check hex function and display rgb values. 
 
 
 ## Developer
@@ -24,10 +24,10 @@ created structures that are called pixels, this contains a
 ## Example
 
 To run the program, give the following commands:
+type in file 
 
 ```
-g++ --std=c++11 *.cpp -o cvp
-./cvp
+examplesvg.svg
 ```
 
 Here is an example of the program running:
@@ -36,10 +36,11 @@ Here is an example of the program running:
 !!!Replace with an example of the program running with user interaction
 #A5B6C4
 
-color(165,107,196)
-Entered Red (165)
-Entered Green(107)
-Entered Blue(196)
+potential issue between red colors values0and0
+potential issue between colorsbf0000andff7f00
+red issue amount-128
+blue issue amount27
+green issue amount58
 !!!
 ```
 
@@ -172,4 +173,4 @@ what this function is doing is it is checking the length of the string and seein
 
 ### Classes
 
-*Coming in version 1.0*
+*in this section we are creating a class called singlePixelin this class we are making it so that the pixel will record the hx values for red green and blue.
